@@ -1,0 +1,19 @@
+{
+  "author": "Sean Lavine <sean@eternalrise.com>",
+  "name": "btc-ex-api",
+  "description": "API for interacting with Bitcoin exchanges",
+  "version": "0.0.1",
+  "homepage": "https://github.com/er88/btc-ex-api",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/er88/btc-ex-api.git"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "dependencies": {
+    "jsdom": "0.2.x"
+  },
+  "devDependencies": {},
+  "main": "lib/index.js"
+}

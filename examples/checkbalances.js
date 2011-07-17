@@ -24,13 +24,17 @@ var b7 = exchanges.add(new btcexapi.ExchangeB7({
 exchanges.getBalances(function(err, ex) {
   if (err) {
     console.log('err!: ' + err);
+    return;
   }
   
   console.log(ex.getSymbol() + ': ' + ex.getBalanceUsds() + ' USD, '
       + ex.getBalanceBtcs() + ' BTC');
+  
 }, function(err) {
-  if (err)
+  if (err) {
     console.log('err: ' + err);
+    return;
+  }
   
   console.log('getBalances() Completed!');
 });
